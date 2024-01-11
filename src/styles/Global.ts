@@ -18,6 +18,8 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
+
+    background: #27272a;
   }
 
   a {
