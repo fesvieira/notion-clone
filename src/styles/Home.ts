@@ -14,7 +14,7 @@ export const NotionWindow = styled.div`
 
   overflow: hidden;
 
-  background: rgb(255, 255, 255);
+  background: #27272a;
 
   & > main {
     padding: 1rem;
@@ -29,7 +29,7 @@ export const SideBar = styled.aside`
 
   border-right: rgb(244, 244, 255);
 
-  background: rgb(250, 250, 250);
+  background: #18181b;
 
   padding: 1rem;
 `;

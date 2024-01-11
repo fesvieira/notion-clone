@@ -6,8 +6,6 @@ import {
   SideButtonsRow,
   TextContainer,
 } from "@/styles/Home";
-import { Row } from "@/styles/global";
-import BubbleMenu from "@tiptap/extension-bubble-menu";
 
 export default function Home() {
   return (
@@ -19,15 +17,6 @@ export default function Home() {
           <SideButton background="#4ade80" />
         </SideButtonsRow>
       </SideBar>
-
-      {
-        // editores
-        // prose mirror
-        // editor js
-        // block suite
-        // remirror
-        // tip tap !!!
-      }
 
       <main>
         <TextContainer>
