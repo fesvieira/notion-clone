@@ -7,6 +7,7 @@ import {
   TextContainer,
 } from "@/styles/Home";
 import { Row } from "@/styles/global";
+import BubbleMenu from "@tiptap/extension-bubble-menu";
 
 export default function Home() {
   return (

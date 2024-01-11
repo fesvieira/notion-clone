@@ -1,5 +1,5 @@
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
-import { useEditor, EditorContent } from "@tiptap/react";
+import { useEditor, EditorContent, BubbleMenu } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import { createLowlight } from "lowlight";
 import js from "highlight.js/lib/languages/javascript";
@@ -26,7 +26,16 @@ const Tiptap = () => {
     content: "<p>Hello World! 🌎️</p>",
   });
 
-  return <EditorContent editor={editor} />;
+  return (
+    <>
+      <EditorContent editor={editor} />
+      {editor && (
+        <BubbleMenu editor={editor}>
+          <button>Bold</button>
+        </BubbleMenu>
+      )}
+    </>
+  );
 };
 
 export default Tiptap;
