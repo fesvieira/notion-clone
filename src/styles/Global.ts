@@ -52,14 +52,18 @@ export const AppContainer = styled.div`
   );
 `;
 
-export const Column = styled.div`
+export const Column = styled.div<{ gap?: string; padding?: string }>`
   display: flex;
   flex-direction: column;
 
-  gap: 1rem;
+  gap: ${({ gap }) => (gap ? gap : "1rem")};
+  padding: ${({ padding }) => (padding ? padding : "1rem")};
+`;
 
-  padding: 1rem;
+export const Row = styled.div<{ gap?: string; padding?: string }>`
+  display: flex;
+  flex-direction: row;
 
-  height: 100%;
-  width: 100%;
+  gap: ${({ gap }) => (gap ? gap : "1rem")};
+  padding: ${({ padding }) => (padding ? padding : "1rem")};
 `;
